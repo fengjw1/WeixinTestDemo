@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/second/second",
+    "pages/third/third",
+    "pages/fouth/fouth",
+    "pages/fifth/fifth",
+    "pages/sixth/sixth"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#ff8443",
+    "navigationBarBackgroundColor": "#ff83fa",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug": true,
+  "tabBar": {
+    "color": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/computer.png"
+      },
+
+      {
+        "pagePath": "pages/third/third",
+        "text": "third",
+        "iconPath": "/images/third.png"
+      },
+      {
+        "pagePath": "pages/fouth/fouth",
+        "text": "fouth",
+        "iconPath": "/images/fourth.png"
+      },
+      {
+        "pagePath": "pages/fifth/fifth",
+        "text": "fifth",
+        "iconPath": "/images/fifth.png"
+      },
+      {
+        "pagePath":"pages/sixth/sixth",
+        "text":"sixth",
+        "iconPath":"/images/sixth.png"
+      }
+    ]
+  }
+}

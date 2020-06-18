@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="countClick">我是index页面，你点击了{{count}}次</view>
+</view>
+
+<!--relative 相对之前位置进行移动，原占有位置不会关闭-->
+<view style="border:solid 1px">文案文案<text style="position:relative; top:20px; left:10px">relative</text>文案文案文案文案文案文案文案文案</view>
+
+<view style="border:solid 1px; margin-top:10px">文案文案<text style="position:absolute; top:20px; left:10px">absolute</text>文案文案文案文案文案文案文案文案</view>

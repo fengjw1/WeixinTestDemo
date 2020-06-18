@@ -1,0 +1,29 @@
+<!--pages/third/third.wxml-->
+<view style="display:flex;">
+	<view style="background-color:red; flex-grow:1; height:80rpx; ">1</view>
+	<view style="background-color:blue; flex-grow:1; height:80rpx; ">2</view>
+	<view style="background-color:green; flex-grow:1; height:80rpx; ">3</view>
+</view>
+
+<view style="display:flex; height:400rpx;">
+	<view style="background-color:yellow; width:250rpx; color:#fff; ">4</view>
+	<view style="display:flex; flex-direction:column; width:100rpx; ">
+		<view style="background-color:gray; flex-grow:2; color:#fff; ">5</view>
+		<view style="background-color:orange; flex-grow:1; color:#fff">6</view>
+	</view>
+</view>
+
+<scroll-view class="scroll-container"  upper-threshold="0" lower-threshold="100"
+	 scoll-into-view="{{toView}}" bindscoll="scroll" bindscrolltolower="scrollToLower"
+	 bindscrolltoupper="scrollToUpper" scroll-y="true" scroll-top="{{scrollTop}}">
+	 	 <view id="item-1" class="scroll-item bg-red">1</view>
+		 <view id="item-2" class="scroll-item bg-blue">2</view>
+		 <view id="item-3" class="scroll-item bg-red">3</view>
+		 <view id="item-4" class="scroll-item bg-blue">4</view>
+		 	<view id="item-3" class="scroll-item bg-red">5</view>
+		 <view id="item-4" class="scroll-item bg-blue">6</view>
+	 </scroll-view>
+	 <view class="act">
+	 	<button bindtap="scrollToTop">点击滚动到顶部</button>
+	 </view>
+	 

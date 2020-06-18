@@ -1,0 +1,28 @@
+<!--pages/second.wxml-->
+<template name="myTemplate">
+  <view>{{content}}</view>
+  <view>{{name}}</view>
+  <view>{{myObj.key1}}</view>
+  <view>{{key2}}</view>
+</template>
+
+
+<view>{{title}}</view>
+<!--作为组件属性-->
+<view id="item- {{id}}" style="border:{{border}}">作为属性渲染</view>
+<!--作为控制属性-->
+<view wx:if="{{showContent}}">作为属性渲染</view>
+<!--作为关键字-->
+<view>{{2}}</view>
+<checkbox checked="{{true}}">true</checkbox>
+
+<!--三元运算符-->
+<view>{{showContent? "true, 显示" : "false, 不显示"}}</view>
+
+<view wx:for="{{myArray}}" wx:for-index="myIndex" wx:for-item="myItem">
+  <block wx:for="{{myItem}}" wx:for-index="subIndex" wx:for-item="subItem">{{subItem}}</block>
+</view>
+
+<template is="myTemplate" data="{{content: '内容', name, myObj, ...myObj2}}"></template>
+
+<view bindtap="myevent">view</view>

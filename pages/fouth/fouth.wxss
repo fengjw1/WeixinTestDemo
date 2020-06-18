@@ -1,0 +1,14 @@
+/* pages/fouth/fouth.wxss */
+.banner{
+	height: 400px;
+	background-color: #ddd;
+}
+.bg-blue{
+	background-color: #87CEFA;
+}
+.bg-red{
+	background-color: #FF6347;
+}
+.bg-green{
+	background-color: #43CD80;
+}

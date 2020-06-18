@@ -1,0 +1,10 @@
+<!--pages/fouth/fouth.wxml-->
+<swiper class="banner" indicator-dots="true" autoplay="{{autoplay}}" current="0" interval="2000"
+ duration="300" bindchange="change">
+	<block wx:for="{{sliderList}}">
+	 	<swiper-item class="{{item.className}}">{{item.name}}</swiper-item>
+	 </block>
+ </swiper>
+ <view>
+	<button bindtap="play">暂停|播放</button>
+ </view>
